@@ -32,7 +32,7 @@ jobs:
           npm run build
       - name: Deploy files
         run: |
-          npm run deploy_files
+          npm run deploy-files
       - name: Upload build
         uses: actions/upload-artifact@v4
         with:
