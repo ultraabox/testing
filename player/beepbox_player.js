@@ -12166,7 +12166,7 @@ var beepbox = (function (exports) {
                                 }
                             }
                             else {
-                                this.rhythm = base64CharCodeToInt[compressed.charCodeAt(charIndex++)];
+                                this.rhythm = clamp(0, Config.rhythms.length, base64CharCodeToInt[compressed.charCodeAt(charIndex++)]);
                             }
                         }
                         break;
